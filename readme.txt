@@ -14,7 +14,7 @@ Website: 	https://tech-hype-ai.vercel.app/index.html
 Changelog:
 -----------------------
 Version 1.0 14-05-2018
-- initial release 
+- initial release
 
 
 Credits:
@@ -31,3 +31,4 @@ Credits:
 License:
 -----------------------
 This website is under Free License - https://tech-hype-ai.vercel.app/index.html
+ISO 9001 standards
