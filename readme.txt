@@ -1,16 +1,15 @@
 -----------------------
 # README
 -----------------------
-Browny is a one page bootstrap 3 based resume/portfolio template.
+Vincent portfolio is a one page bootstrap 3 based resume/portfolio template.
 
 
-Template Info:
+Website Info:
 -----------------------
-Name: 		Browny - Free Bootstrap One Page Portfolio Resume Tempalte
+Name: 		Were Vincent Portfolio
 Version: 	1.0
-Author: 	ThemeSINE
-Website: 	https://www.themesine.com/
-
+Author: 	Vincent@TechHypeAI
+Website: 	https://tech-hype-ai.vercel.app/index.html
 
 Changelog:
 -----------------------
@@ -31,4 +30,4 @@ Credits:
 
 License:
 -----------------------
-This template is under Free License - https://www.themesine.com/license/
+This website is under Free License - https://tech-hype-ai.vercel.app/index.html
