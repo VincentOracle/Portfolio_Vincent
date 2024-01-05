@@ -406,7 +406,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     margin-bottom: 37px;
 }
 .progress-bar {
-   background: #b636ff;
+   background: #4848cb;
     border-radius: 3px;
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
@@ -414,6 +414,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    -o-transition: width 1.5s ease-in-out;
    transition: width 1.5s ease-in-out;
 }
+
 .tooltip{
    position:relative;
    float:right;
@@ -436,7 +437,42 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*-------------------------------------
-        7. Experience
+        7. Tools and Frame works
+-------------------------------------*/
+#slider-container {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 15s linear infinite;
+        }
+
+        .slider img {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            transition: transform 1.48s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    #tools{
+        margin-left: 40%;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+
+/*-------------------------------------
+        8. Experience
 -------------------------------------*/
 .experience {
     padding: 50px 0 100px;
@@ -517,7 +553,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 .experience-time-responsive{display: none;}
 /*-------------------------------------
-        8. Profiles
+        9. Profiles
 --------------------------------------*/
 .profiles {
     padding:  50px 0 100px;
@@ -592,7 +628,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #fff;}
 .single-profile:hover .profile-border {border:transparent;}
 /*-------------------------------------
-        9. Portfolio
+        10. Portfolio
 --------------------------------------*/
 .portfolio {
     padding:  50px 0 100px;
@@ -668,7 +704,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }/*.isotope-overlay*/
 
 /*-------------------------------------
-        10. Clients
+        11. Clients
 --------------------------------------*/
 .clients {padding-top: 50px;}
 .clients-area {
@@ -686,7 +722,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*-------------------------------------
-        11. Contact
+        12. Contact
 --------------------------------------*/
 .contact {
     background: #f9fbfd;
