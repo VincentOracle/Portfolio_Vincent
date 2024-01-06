@@ -106,9 +106,13 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> Were <br> Vincent <span>.</span>   </h2>
+							
+							<h2 >hi <span>,</span> i am <br> Were <br> Vincent <span>.</span>   </h2>
 							<p>Data science and ML engineer</p>
-							<a href="assets/download/browney.txt" download>download resume</a>
+							<!-- <div class="animate-text">
+							<h5 style="color: beige;" >Download CV  </h5>
+							</div> -->
+							<a href="assets/download/Resume-Were-Vincent.pdf" download>download resume</a>
 						</div><!--/.header-text-->
 					</div><!--/.col-->
 				</div><!-- /.row-->
@@ -120,6 +124,9 @@
 		<!--about start -->
 		<section id="about" class="about">
 			<div class="section-heading text-center">
+				<div class="animate-text">
+				<h5 style="color: rgb(47, 47, 45);" >About </h5>
+				</div>
 				<h2>about me</h2>
 			</div>
 			<div class="container">
@@ -214,6 +221,9 @@
 		<!--education start -->
 		<section id="education" class="education">
 			<div class="section-heading text-center">
+				<div class="animate-text">
+				<h5 style="color: rgb(47, 47, 45);" >Education </h5>
+				</div>
 				<h2>education</h2>
 			</div>
 			<div class="container">
@@ -1029,6 +1039,25 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
 	<script>
+		// banner
+
+	const textElements = document.querySelectorAll('.animate-text');
+
+	function playAnimation(index) {
+		if (index < textElements.length) {
+			textElements[index].style.opacity = 1;
+
+			setTimeout(() => {
+				textElements[index].style.opacity = 0;
+				playAnimation(index + 1);
+			}, 3000); // Adjust the delay as needed
+		}
+	}
+
+	document.addEventListener('DOMContentLoaded', () => {
+		playAnimation(0);
+	});
+
     // Pause animation when the window is not focused
     let isWindowFocused = true;
     

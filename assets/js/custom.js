@@ -10,12 +10,32 @@ $(document).ready(function () {
 
 
 	/*=========== TABLE OF CONTENTS ===========
+	0. Banner
 	1. Scroll To Top 
 	2. Smooth Scroll spy
 	3. Progress-bar
 	4. owl carousel
 	5. welcome animation support
 	======================================*/
+
+	//0. Banner
+	const textElements = document.querySelectorAll('.animate-text');
+
+	function playAnimation(index) {
+		if (index < textElements.length) {
+			textElements[index].style.opacity = 1;
+
+			setTimeout(() => {
+				textElements[index].style.opacity = 0;
+				playAnimation(index + 1);
+			}, 3000); // Adjust the delay as needed
+		}
+	}
+
+	document.addEventListener('DOMContentLoaded', () => {
+		playAnimation(0);
+	});
+
 
 	// 1. Scroll To Top 
 	$(window).on('scroll', function () {

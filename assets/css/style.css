@@ -239,6 +239,39 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     transition: 0.3s linear;
 }
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+/* my description */
+.animate-text {
+            
+            opacity: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #fff; 
+            padding-right: 5px; 
+            animation: typing 3s steps(30, end) forwards,
+              blink-caret 0.8s step-end infinite;
+            animation-delay: 1s;
+          }
+
+          @keyframes typing {
+            from {
+              width: 0;
+            }
+            to {
+              width: 220%;
+            }
+          }
+
+          @keyframes blink-caret {
+            from,
+            to {
+              border-color: transparent;
+            }
+            30% {
+              border-color: #fff;
+            }
+          }
+
+
 /*.header-text-area*/
 
 /*-------------------------------------
