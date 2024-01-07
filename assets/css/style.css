@@ -403,7 +403,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
@@ -478,8 +478,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         }
 
         .slider {
+            margin-top: 30px;
             display: flex;
             animation: slide 15s linear infinite;
+    
         }
 
         .slider img {
@@ -503,7 +505,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         font-size: larger;
     }
 
-
+#tool{
+    height: 75px;
+    width: 105px;
+}
+/* #h6{
+       font-weight: bold; 
+       color: #4848cb;
+    } */
 /*-------------------------------------
         8. Experience
 -------------------------------------*/
