@@ -488,6 +488,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
             margin: 10px;
             width: 50px;
             height: 50px;
+            margin-right: 50px;
             transition: transform 1.48s;
         }
 
@@ -499,6 +500,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
                 transform: translateX(-100%);
             }
         }
+        .slider img:hover {
+            cursor: pointer;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            margin-right: 50px;
+            transform: scaleX();
+
+
+        }
     #tools{
         margin-left: 40%;
         font-weight: bold;
@@ -509,10 +520,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height: 75px;
     width: 105px;
 }
-/* #h6{
-       font-weight: bold; 
-       color: #4848cb;
-    } */
+#tool_type{
+    font-weight: bold;
+    color: #000;
+    
+}
 /*-------------------------------------
         8. Experience
 -------------------------------------*/
