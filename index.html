@@ -664,6 +664,35 @@
 				<div class="container">
 					<div class="profiles-content">
 						<div class="row">
+							<!-- <div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-themeforest"></i></a>
+										<div class="profile-icon-name">themeforest</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-themeforest"></i></a>
+											<div class="profile-icon-name">Themeforest</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">dribbble</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											
+											<a href=""><i class="flaticon-dribbble"></i></a>
+											<div class="profile-icon-name">dribbble</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="col-sm-3">
 								<div class="single-profile">
 									<div class="profile-txt">
@@ -673,21 +702,7 @@
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
 											<a href=""><i class="flaticon-themeforest"></i></a>
-											<div class="profile-icon-name">themeforest</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-dribbble"></i></a>
-										<div class="profile-icon-name">dribbble</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-dribbble"></i></a>
-											<div class="profile-icon-name">dribbble</div>
+											<div class="profile-icon-name">Themeforest</div>
 										</div>
 									</div>
 								</div>
@@ -1001,7 +1016,8 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+						&copy; copyright 2023&mdash;<span id="currYear"></span>.All rights reserved. For the love of Technology. Designed and developed by <a href="
+                                 https://portfolio-vincent-mocha.vercel.app/">Vincent(me)</a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
@@ -1010,7 +1026,11 @@
 				<div class="return-to-top">
 					<i class="fa fa-angle-up " id="scroll-top" ></i>
 				</div>
-				
+				<script>
+               var date = new Date();
+             var year = date.getFullYear();
+           document.getElementById("currYear").innerHTML = year;
+    </script>
 			</div><!--/.scroll-Top-->
 			
         </footer><!--/.footer-copyright-->
