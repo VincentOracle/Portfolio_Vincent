@@ -72,7 +72,7 @@
 			                    <i class="fa fa-bars"></i>
 			                </button>
 					
-						<img style="height: 50px;width: 50px;margin-left:-250px;margin-top: 20px;border-radius: 50%;" src="assets/logo/portfolio_logo.png" alt="logo">
+						<img style="height: 50px;width: 50px;position:relative;margin-left:-250px;margin-top: 20px;border-radius: 50%;" src="assets/logo/portfolio_logo.png" alt="logo">
 			            <a class="navbar-brand" href="index.html">Vincent~Porfolio</a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
@@ -570,7 +570,7 @@
 														</h4>
 														<h5>newyork, USA</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															This is a dummy Duis Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -588,7 +588,7 @@
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 														2012 - 2013
 													</h2>
-													<h3>Technical Writer</h3>
+													<h3>Applications architect</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-5">
@@ -597,9 +597,9 @@
 														<h4 class="title">
 															hoplony tech limited
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Nairobi, Kenya</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															This is a dummy Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -610,7 +610,7 @@
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 														2012 - 2013
 													</h2>
-													<h3>UI/UX designer</h3>
+													<h3>Business data analyst </h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 										</div>
@@ -623,7 +623,7 @@
 											<div class="col-md-5">
 												<div class="experience-time text-right">
 													<h2>2010 - 2012</h2>
-													<h3>frontend developer</h3>
+													<h3>Data Engineer</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -635,7 +635,7 @@
 														</h4>
 														<h5>newyork, USA</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															This is a dummy Duis Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -661,9 +661,7 @@
 				<div class="container">
 					<div class="profiles-content">
 						<div class="row">
-
-
-<div class="col-sm-3">
+                            <div class="col-sm-3">
 								<div class="single-profile">
 									<div class="profile-txt">
 										<!-- <a href=""><i class="flaticon-smug"></i></a> -->
@@ -679,9 +677,6 @@
 								</div>
 							</div>
 
-
-
-							
 							<div class="col-sm-3">
 								<div class="single-profile">
 									<div class="profile-txt">
@@ -747,9 +742,8 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- dribble -->
-<div class="col-sm-3">
+							<!-- dribble --> 
+                             <div class="col-sm-3"> 
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a href="https://dribbble.com/vincent_oracle"><i class="flaticon-dribbble"></i></a>
@@ -764,10 +758,7 @@
 									</div>
 								</div>
 							</div>
-							
-							
 							<!-- dribble -->
-
 							<div class="col-sm-3">
 								<div class="single-profile">
 									<div class="profile-txt">
@@ -937,24 +928,30 @@
 					<div class="row">
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
+								<!-- contact form start-->
 								<div class="contact-form">
-									<form>
+									<form onsubmit="sendEmail(); reset(); return false;">
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" required name="name">
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+													<input type="email" class="form-control" id="email" placeholder="Email*" required name="email">
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+													<input type="text" class="form-control" id="phone" placeholder="Phone Number" required name="phonenumber">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" required name="subject">
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -968,12 +965,13 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
+													<!-- <a class="contact-btn" href="#" role="button">submit</a> -->
+													<button type="submit" class="contact-btn">Submit</button>
 												</div><!--/.single-single-contact-btn-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 									</form><!--/form-->
-								</div><!--/.contact-form-->
+								</div><!--/.contact-form end-->
 							</div><!--/.single-contact-box-->
 						</div><!--/.col-->
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
@@ -1014,6 +1012,7 @@
 			</div><!--/.container-->
 
 		</section><!--/.contact-->
+
 		<!--contact end -->
 
 		<!--footer-copyright start-->
@@ -1021,7 +1020,7 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright 2023&mdash;<span id="currYear"></span>.All rights reserved. For the love of Technology. Designed and developed by <a href="
+						&copy; Copyright 2023&mdash;<span id="currYear"></span>.All rights reserved. For the love of Technology. Designed and developed by <a href="
                                  https://portfolio-vincent-mocha.vercel.app/">Vincent(me)</a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
@@ -1136,6 +1135,30 @@
 
     // Start animation when the document is ready
     document.addEventListener('DOMContentLoaded', animateSlider);
-</script>    
+</script> 
+
+<!-- script to send email start -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+      Email.send({
+	//   SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+      Host : "smtp.elasticemail.com",
+      Username : "oumawere2001@gmail.com",
+      Password : "Were68653509",
+      To : 'oraclevincent333@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Get In touch",
+      Body : "Name:"+ document.getElementById("name").value 
+	  + "<br> Email:"+document.getElementById("email").value
+	  + "<br> Phone no:"+document.getElementById("phone").value
+	  + "<br> Message:"+document.getElementById("comment").value,
+}).then(
+  message => alert("Message sent successfully!")
+);
+}
+
+</script>
+<!-- script to send email end -->
 </body>
 </html>

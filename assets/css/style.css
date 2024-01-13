@@ -779,13 +779,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         12. Contact
 --------------------------------------*/
 .contact {
-    background: #f9fbfd;
+    background: #f0f3f5;
     padding: 50px 0 100px;
+
 }
 .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
-    
+    border-style: 2px solid;
+    cursor: pointer;
 }
 .contact-form .form-control {
     padding: 25px;
@@ -833,7 +835,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     
 }
 .single-contact-btn:hover{
-    background: #9f00ff;
+    background: #9402ee;
     border: 1px solid #9f00ff;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
