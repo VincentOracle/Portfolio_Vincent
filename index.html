@@ -857,6 +857,55 @@
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
 								</div><!-- /.col -->
+                                <div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+
+
 							</div><!-- /.row -->
 						</div><!--/.isotope-->
 					</div><!--/.gallery-content-->
@@ -934,31 +983,31 @@
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" required name="name">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" autocomplete="off" name="name"required >
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" required name="email">
+													<input type="email" class="form-control" id="email" placeholder="Email*" autocomplete="on"  name="email"required>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<input type="text" class="form-control" id="phone" placeholder="Phone Number" required name="phonenumber">
+													<input type="text" class="form-control" id="phone" placeholder="Phone Number*" autocomplete="off"  name="phonenumber"required>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 											<div class="col-sm-12">
 												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" required name="subject">
+													<input type="text" class="form-control" id="subject" placeholder="Subject*" autocomplete="off"  name="subject"required>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+													<textarea class="form-control" rows="12" id="comment" placeholder="Message" ></textarea>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -1021,7 +1070,7 @@
 				<div class="hm-footer-copyright text-center">
 					<p>
 						&copy; Copyright 2023&mdash;<span id="currYear"></span>.All rights reserved. For the love of Technology. Designed and developed by <a href="
-                                 https://portfolio-vincent-mocha.vercel.app/">Vincent(me)</a>
+                                 https://portfolio-vincent-mocha.vercel.app/"><span style="color: #b636ff;">Vincent(me)</span></a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
@@ -1075,6 +1124,7 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		// banner
 
@@ -1144,17 +1194,32 @@
       Email.send({
 	//   SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
       Host : "smtp.elasticemail.com",
-      Username : "oumawere2001@gmail.com",
-      Password : "Were68653509",
-      To : 'oraclevincent333@gmail.com',
+      Username : "EmailTest",
+      Password : "ggbazgqbwirqglld",
+      To : "oraclevincent333@gmail.com",
       From : document.getElementById("email").value,
-      Subject : "New Get In touch",
+      Subject : "Subject:"+document.getElementById("subject").value,
       Body : "Name:"+ document.getElementById("name").value 
 	  + "<br> Email:"+document.getElementById("email").value
 	  + "<br> Phone no:"+document.getElementById("phone").value
 	  + "<br> Message:"+document.getElementById("comment").value,
 }).then(
-  message => alert(message)
+  message =>{
+	if (message="OK"){
+	  Swal.fire({
+      title: "Success!",
+      text: "Message sent Successfully!",
+      icon: "success"
+});
+}
+    else{
+    Swal.fire({
+    title: "Error",
+    text: "Not sent!",
+    icon: "unsuccess"
+});
+} 
+}
 );
 }
 
