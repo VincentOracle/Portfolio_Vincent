@@ -6,7 +6,7 @@ Vincent portfolio is a one page bootstrap 3 based resume/portfolio template.
 
 Website Info:
 -----------------------
-Name: 		Were Vincent Portfolio
+Name: 		Were Vincent Portfolio website
 Version: 	1.0
 Author: 	Vincent@TechHypeAI
 Website: 	https://tech-hype-ai.vercel.app/index.html
