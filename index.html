@@ -1217,7 +1217,7 @@
 	
 });
 }
-    else{
+    else if(message!="OK"){
    Swal.fire({
    icon: "error",
    title: "Oops...",
@@ -1225,6 +1225,14 @@
    footer: '<a href="index.html">Why do I have this issue?</a>'
 });
 } 
+	  else{
+Swal.fire({
+   icon: "error",
+   title: "Oops...",
+   text: "Something went wrong!",
+   footer: '<a href="index.html">Why do I have this issue?</a>'
+		  
+	  }
 }
 );
 }
