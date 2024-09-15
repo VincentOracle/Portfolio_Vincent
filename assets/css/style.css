@@ -186,15 +186,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
         3.  Welcome-hero
 --------------------------------------*/
 .welcome-hero{
+    object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
     /* background:url(../images/about/datascience.jpg)no-repeat; */
-    background:url(../images/ds.jpg)no-repeat;
+    background:url(../images/ds.jpg)no-repeat; 
     background-size:cover;
     background-position: center;
     height:590px;
+    
 }
 .welcome-hero:before{
     position:absolute;
@@ -248,8 +250,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
             overflow: hidden;
             border-right: 3px solid #fff; 
             padding-right: 5px; 
-            animation: typing 3s steps(30, end) forwards,
-              blink-caret 0.8s step-end infinite;
+            animation: typing 6s steps(30, end) forwards,
+              blink-caret 0.9s step-end infinite;
             animation-delay: 1s;
           }
 
