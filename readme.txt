@@ -1,7 +1,7 @@
 -----------------------
 # README
 -----------------------
-Vincent portfolio is a one page bootstrap 3 based resume/portfolio template.
+Vincent portfolio is a one page bootstrap 3 based resume/portfolio website.
 
 
 Website Info:
